@@ -1,0 +1,14 @@
+digraph {
+	rankdir=LR
+	"{'q0'}" [shape=circle]
+	"{'q0', 'q1'}" [shape=circle]
+	"{'q0', 'q2'}" [shape=doublecircle]
+	start [label="" shape=none]
+	start -> "{'q0'}"
+	"{'q0'}" -> "{'q0', 'q1'}" [label=a]
+	"{'q0'}" -> "{'q0'}" [label=b]
+	"{'q0', 'q1'}" -> "{'q0', 'q1'}" [label=a]
+	"{'q0', 'q1'}" -> "{'q0', 'q2'}" [label=b]
+	"{'q0', 'q2'}" -> "{'q0', 'q1'}" [label=a]
+	"{'q0', 'q2'}" -> "{'q0'}" [label=b]
+}
