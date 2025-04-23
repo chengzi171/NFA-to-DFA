@@ -1,4 +1,5 @@
-这是一个用于将 NFA 转换为 DFA 的 python 应用程序。\n
+这是一个用于将 NFA 转换为 DFA 的 python 应用程序。  
+
 主要使用 Streamlit 库来创建用户界面，并使用 NFA 模块来处理 NFA 和 DFA 的转换, 并使用 Graphviz 来可视化 DFA 的状态图。
 所调用的第三方库信息保存在 requirements.txt 文件中。
 在终端运行以下命令来下载所需第三方库：
