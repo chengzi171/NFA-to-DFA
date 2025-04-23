@@ -1,0 +1,11 @@
+digraph {
+	rankdir=LR
+	"['P', 'S', 'Z']" [shape=doublecircle]
+	"['P', 'Z']" [shape=doublecircle]
+	start [label="" shape=none]
+	start -> "['P', 'S', 'Z']"
+	"['P', 'S', 'Z']" -> "['P', 'S', 'Z']" [label=1]
+	"['P', 'S', 'Z']" -> "['P', 'Z']" [label=0]
+	"['P', 'Z']" -> "['P', 'Z']" [label=1]
+	"['P', 'Z']" -> "['P', 'Z']" [label=0]
+}
