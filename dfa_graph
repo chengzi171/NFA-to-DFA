@@ -1,7 +1,7 @@
 digraph {
 	rankdir=LR
-	"['P', 'S', 'Z']" [shape=doublecircle]
-	"['P', 'Z']" [shape=doublecircle]
+	"['P', 'S', 'Z']" [shape=circle]
+	"['P', 'Z']" [shape=circle]
 	start [label="" shape=none]
 	start -> "['P', 'S', 'Z']"
 	"['P', 'S', 'Z']" -> "['P', 'S', 'Z']" [label=1]
