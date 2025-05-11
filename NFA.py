@@ -88,7 +88,7 @@ def nfa_to_dfa(nfa):
                 if (sub_state, symbol) in nfa.transition_function:  # 检查是否有转移
                     next_state.update(nfa.transition_function[(sub_state, symbol)])  # 更新下一个状态集合
 
-            # 计算转移后状态的 ε 闭包
+            # 计算转移后状态的ε闭包
             next_state = epsilon_closure(nfa, next_state)
             next_state = frozenset(next_state)  # 转换为 frozenset
             dfa_transition_function[(current_state, symbol)] = next_state  # 更新 DFA 转移函数

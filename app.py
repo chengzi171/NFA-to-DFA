@@ -33,7 +33,7 @@ nfa_alphabet = {symbol.strip() for symbol in nfa_alphabet if symbol.strip()}  # 
 st.write('### 2. 输入NFA的转移函数(无转移的状态不需要输入)')
 nfa_transition_function = {}
 for state in nfa_states:
-    for symbol in nfa_alphabet | {''}:  # 添加 ε 到字母表中
+    for symbol in nfa_alphabet | {''}:  # 添加ε到字母表中
         state_transitions = st.text_input(f'状态 {state} 对字母 {symbol if symbol else "ε"} 的转移 (用逗号分隔)', '').split(',')
         state_transitions = {s.strip() for s in state_transitions if s.strip()}  # 转换为集合
         if state_transitions:
